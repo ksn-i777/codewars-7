@@ -1,0 +1,6 @@
+function highAndLow(numbers){
+    let arr = numbers.split(' ').map(el => +el)
+    let max = arr.reduce((acc, el) => el >= acc ? el : acc, arr[0])
+    let min = arr.reduce((acc, el) => el <= acc ? el : acc, arr[0])
+    return max+' '+min
+}
