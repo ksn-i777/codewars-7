@@ -1,0 +1,10 @@
+// return masked string
+function maskify(cc) {
+    if (cc.length <= 4) {
+      return cc
+    }
+    const start = cc.slice(0, cc.length-4)
+    const end = cc.slice(cc.length-4)
+    const arr = start.split('').map(el => '#').join('')
+    return arr+end
+}
