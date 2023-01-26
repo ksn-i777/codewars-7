@@ -1,0 +1,8 @@
+var number = function(busStops){
+  // Good Luck!
+  let num = 0
+  busStops.map(el => {
+    num = num + el[0] - el[1]
+  })
+  return num
+}
