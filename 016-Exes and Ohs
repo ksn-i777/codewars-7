@@ -1,0 +1,15 @@
+function XO(str) {
+    //code here
+  let o = 0
+  let x = 0
+  str.toLowerCase().split('').map(el => {
+    if (el === 'x') {
+        x = x + 1
+    }
+    if (el === 'o') {
+        o = o + 1
+    }
+    return el
+  })
+  return x === o
+}
