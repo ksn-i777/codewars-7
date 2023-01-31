@@ -1,0 +1,8 @@
+function minMax(arr){
+  if (arr.length === 1) {
+    return [arr[0], arr[0]]  
+  } else {
+    let a = arr.map(el => el).sort((a, b) => a-b)
+    return [a[0], a[a.length-1]]
+  }
+}
