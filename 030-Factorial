@@ -1,0 +1,7 @@
+function factorial(n){
+  // Calculate the factorial here
+  if (n < 0 || n > 12) {throw new RangeError('')}
+  else {
+    return n ? n * factorial(n - 1) : 1
+  }
+}
