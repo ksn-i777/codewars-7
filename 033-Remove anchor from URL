@@ -1,0 +1,6 @@
+function removeUrlAnchor(url){
+  const arr = url.split('')
+  const i = arr.indexOf('#')
+  if(i !== -1) {arr.splice(i, arr.length-1)}
+  return arr.join('')
+}
